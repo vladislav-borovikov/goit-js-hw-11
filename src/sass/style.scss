@@ -1,0 +1,148 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  border: none;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+  padding: 15px 0 15px 0;
+  border-radius: 10px;
+}
+
+.search-form__input {
+  font-family: 'Outfit', sans-serif;
+  border-radius: 5px;
+  border-color: transparent;
+  height: 30px;
+  padding: 10px;
+}
+
+.search-form__btn {
+  font-family: 'Outfit', sans-serif;
+  margin-left: 10px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(122, 118, 118);
+    color: white;
+    transition: background-color 600ms ease;
+  }
+}
+
+.gallery {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.photo-card {
+  display: block;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+
+
+.photo-card__img {
+  width: 100%;
+  object-fit: cover;
+  height: 230px;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.info-item {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.gallery-btn {
+  font-family: 'Outfit', sans-serif;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 200px;
+  background-color: pink;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(122, 118, 118);
+  }
+}
+.load-more {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.visually-hidden {
+  display: none;
+}
+
